@@ -1,0 +1,40 @@
+<h1> Cats </h1>
+
+<%= form_tag cats_create_path do %>
+  
+  <%= label_tag(:name, "Name: ") %>
+  <%= text_field_tag(:name) %>
+
+<% end %>
+
+<h1> Todos </h1>
+
+<%= form_tag cats_create_path do %>
+  
+  <%= label_tag(:tasks, "tasks: ") %>
+  <%= text_field_tag(:tasks) %>
+
+  <%= label_tag(:finished, "status: ") %>
+  <%= text_field_tag(:finished) %>
+
+<% end %>
+
+<h1> User </h1>
+
+<%= form_tag cats_create_path do %>
+  
+  <%= label_tag(:daniel, "username: ") %>
+  <%= text_field_tag(:daniel) %>
+
+  <%= label_tag(:email, "email: ") %>
+  <%= text_field_tag(:email) %>
+
+  <%= label_tag(:age, "age: ") %>
+  <%= text_field_tag(:age) %>
+
+  <%= submit_tag("Done") %>
+<% end %>
+
+
+
+

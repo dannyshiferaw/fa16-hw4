@@ -1,0 +1,46 @@
+<h1> Welcome to my Site <h1>
+
+<%= link_to "Please Fill Out This Form", cats_new_path %>
+
+<h1> Cats </h1>
+<table>
+  <tr>
+    <td>Name</td>
+  </tr>
+  <% @cats.each do |cat| %>
+    <tr>
+      <td><%= cat.name%></td>
+    </tr>
+  <% end %>
+</table>
+
+<h1> Users </h1>
+<table>
+  <tr>
+    <td>Username</td>
+    <td>Email</td>
+    <td>Age</td>
+  </tr>
+  <% @user.each do |user| %>
+    <tr>
+      <td><%= user.daniel%></td>
+      <td><%= album.email%></td>
+      <td><%= album.age%></td>
+    </tr>
+  <% end %>
+</table>
+
+<h1> Todos </h1>
+<table>
+  <tr>
+    <td>Tasks</td>
+    <td>Status</td>
+  </tr>
+  <% @todo.each do |todo| %>
+    <tr>
+      <td><%= todo.tasks%></td>
+      <td><%= todo.finished%></td>
+    </tr>
+  <% end %>
+</table>
+
